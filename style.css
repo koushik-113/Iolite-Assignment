@@ -1,0 +1,62 @@
+ body {
+        background: white;
+    }
+    .padder
+    {
+      padding: 10px;
+    }
+    .navbar-inverse .navbar-toggle
+    {
+      background: black;
+    }
+    .navbar-inverse {
+        background-color: white;
+        color: #fff;
+        margin-bottom: 0px !important;
+        border: none;
+    }
+    .mainnav a {
+        color: black;
+        text-decoration: none;
+    }
+    .sidenav
+    {
+      color: black;
+      padding-top: 3px
+    }
+    .mainnav {
+        padding: 20px;
+        color: black;
+        transform: translateZ(0);
+        transition: transform 0.25s ease-out;
+    }
+    .mainnav:hover {
+        transform: scale(1.05);
+        background: black;
+        color: white;
+        /*color: black !important;*/
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .img{
+        height: 179px;
+        margin: 0px auto;
+    }
+    .clear{
+        height: 12px;
+    }
+    th{
+        text-align: center;
+        border: 1px solid;
+    }
+    .dataTables_wrapper .dataTables_filter input, td{   
+        border: 1px solid !important;
+    }
+    .padding-table{
+        background: #b4cef5;
+    border-radius: 8px;
+    padding: 15px;
+    }
+    .chart{
+        height: 300px;
+    }

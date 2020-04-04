@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style type="text/css">
+   	#hidden{
+   		display: none;
+   	}
+   	.container-fluid{
+   		height: 100vh;
+   		margin: 0px;
+   	}
+   </style>
+</head>
+<body>
+<div class="container-fluid bg-primary">
+	<div class="row">
+		<div class="col-sm-12 col-xs-12 text-center text-underline" style="background: white;color: black">
+			<p class="h2 text-align">LOGIN FORM</p>
+			
+		</div>
+	</div>
+	<div style="height: 50px"></div>
+	<div class="row">
+		<div class="col-sm-3"></div>
+		<div class="col-sm-6">
+			<div class="panel" style="color: black">
+                            <div class="panel-heading">
+                                <p class="h3 text-center">Hey! Sign In here :)</p>
+                            </div>
+                            <div class="panel-body">
+                            	<div class="row">
+		           <div class="col-md-12">
+	                   <div class="row">
+	                       <div class="form-group col-md-12">
+	                           <label for="email">Email:</label>
+	                           <input type="email" class="form-control" required="required"  id="emailid" placeholder="Enter email" name="email">
+	                       </div>
+	                   </div>
+	               </div>
+	               <div class="col-md-12">
+	                   <div class="row">
+	                       <div class="form-group col-md-12">
+	                           <label for="pwd">Password:</label>
+	                           <input type="password" class="form-control" required="required"  id="password" placeholder="Enter password" name="pwd">
+	                       </div>
+	                   </div>
+	               </div>
+	               <div class="col-md-12">
+	                   <div class="row">
+	                       <div class="form-group col-md-12" align="center">
+	                           <button type="submit" class="btn btn-danger btn-lg" onclick="validate()">Submit</button>
+	                       </div>
+	                   </div>
+	               </div>
+	               <div class="col-md-12">
+	               		<div class="row">
+	               			<h4 class="alert alert-warning text-center" id="hidden">Both Are Mandatory Fields</h4>
+	               		</div>
+	               </div>
+				</div>
+                            </div>
+                        </div>
+		</div>
+		<div class="col-sm-3"></div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	function validate(e) {
+		var a = document.getElementById("emailid").value;
+		var b = document.getElementById("password").value;
+		if (a != "" && b !="") {
+			location.replace("Dashboard.html")
+		}
+		else{
+			document.getElementById('hidden').style.display = 'block';
+			setTimeout(function(){
+				document.getElementById('hidden').style.display = 'none';
+			},2000);
+			return false;
+		}
+	}
+</script>
+</html>
